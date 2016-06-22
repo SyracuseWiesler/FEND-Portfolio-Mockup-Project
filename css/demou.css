@@ -1,0 +1,289 @@
+@media all and (min-width: 320px){
+    /*mobile*/
+    html{
+        background-color: black;
+    }
+
+    body{
+        margin:0 auto;
+        background-color: white;
+        font-family:"arial"
+    }
+
+    .container{
+        width:100%;
+        padding: 20px 20px 0 20px;
+    }
+
+    .row{
+        padding: 0 10px;
+    }
+
+    .right{
+        float:right;
+        padding:0 10px;
+    }
+
+    .left {
+        height: 200px;
+        float: left;
+        width: 15%;
+        position:relative;
+        top: 80px;
+        left: -20px;
+    }
+
+    header{
+        display: block;
+        border-bottom: 2px solid #7d97ad;
+    }
+
+    header .title{
+        float: right;
+        margin-top: -15px;
+    }
+
+    header .title h1, header .title h4{
+        float: right;
+        clear: both;
+    }
+
+    header .title h1{
+        margin-top:5px;
+        margin-bottom:0;
+        font-size: 30px;
+    }
+
+    header .title h4{
+        margin-top:0;
+        font-size:15px;
+        font-weight: normal;
+    }
+
+    header .logo{
+        float: left;
+    }
+
+    header .logo img{
+        width: 35px;
+        height: auto;
+    }
+
+    header:after{
+        height: 0;
+        content: ".";
+        visibility: hidden;
+        display: block;
+        clear: both;
+    }
+
+    .left div{
+        width: 80px;
+        height: 80px;
+        margin: 50px auto;
+    }
+
+    .left .top{
+        background-color: #02b3e4;
+    }
+
+    .left .mid{
+        background-color: #2d3c49;
+    }
+
+    .left .bottom{
+        background-color: #7d97ad;
+    }
+
+    .left div p{
+        position:relative;
+        top: 85px;
+        font-size: 26px;
+        left: -18px;
+    }
+
+    .showcase{
+        margin: 20px 0 0 0;
+        padding:0;
+        overflow: hidden;
+    }
+    .showcase img{
+        width: 100%;
+        height: auto;
+    }
+
+    .right p{
+        font-size: 30px;
+        margin: 30px 0 10px 0;
+        color: #7d97ad;
+    }
+
+    .work{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .work .sub-work{
+        width: 90%;
+        padding:0;
+        margin: 0 auto;
+    }
+
+    .fwork{
+        width: 90%;
+        margin:0;
+    }
+
+    .fwork p{
+        font-size: 30px;
+    }
+
+    .work .sub-work img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-work img:hover {
+        cursor: pointer;
+    }
+
+    .sub-work h2, .sub-work p{
+        text-align:center;
+    }
+
+    .work .sub-work p a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .sub-work h2{
+        margin: 10px 0 0 0;
+        font-size: 30px;
+    }
+
+    .sub-work p{
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .sub-work div:nth-child(2):hover {
+        color: #02b3e4;
+        cursor: pointer;
+    }
+
+    .color-box{
+        margin: 30px 0 30px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .color-box div{
+        height: 80px;
+        width: 80px;
+    }
+
+    .color-box div p{
+        position: relative;
+        top: 60px;
+        font-size: 15px;
+    }
+
+    .color-box .top{
+        background-color: #02b3e4;
+    }
+
+    .color-box .mid{
+        background-color: #2d3c49;
+    }
+
+    .color-box .bottom{
+        background-color: #7d97ad;
+    }
+
+}
+
+@media all and (min-width: 768px){
+    /*tablet*/
+    header .logo img{
+        width: 70px;
+        height: auto;
+    }
+
+    header .title h1{
+        margin-top:5px;
+        margin-bottom:0;
+        font-size: 60px;
+    }
+
+    header .title h4{
+        margin-top:0;
+        font-size:30px;
+        font-weight: normal;
+    }
+
+    .color-box div{
+        height: 100px;
+        width: 100px;
+    }
+
+    .color-box div p{
+        top: 80px;
+        font-size: 18px;
+    }
+
+}
+
+@media all and (min-width: 992px){
+    /*desktop*/
+    .showcase{
+        height: 500px;
+    }
+
+    .showcase img{
+        width: 100%;
+    }
+
+    .fwork{
+        width: 100%;
+        margin:0 0 0 -8px;
+        padding:0;
+    }
+
+    .fwork p{
+        font-size: 40px;
+    }
+
+    .work{
+        width: 100%;
+        display: flex;
+        padding:0;
+        margin:0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .work .sub-work{
+        width: 31%;
+    }
+    .work .sub-work:nth-child(1){
+        margin-left: -5px;
+    }
+    .work .sub-work:nth-child(3){
+        margin-right: -5px;
+    }
+
+    .sub-work h2{
+        margin: 10px 0 0 0;
+        font-size: 25px;
+    }
+
+    .sub-work p{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .container{
+        padding:30px 40px 0 40px;
+    }
+}
